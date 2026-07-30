@@ -27,8 +27,10 @@
  <div id="toolbar">
   <img id="home"        title="Home"                   src="skins/dark/home.png"/><br/>
 <!--ZOOM-->
-  <img id="zoomin"      title="Zoom In"                src="skins/dark/zoomin.png"/><br/>
-  <img id="zoomout"     title="Zoom Out"               src="skins/dark/zoomout.png"/><br/>
+<!--
+	<img id="zoomin"      title="Zoom In"                src="skins/dark/zoomin.png"/><br/>
+	<img id="zoomout"     title="Zoom Out"               src="skins/dark/zoomout.png"/><br/>
+-->
 <!--ZOOM-->
 <!--LIGHTING-->
   <img id="lighting_off" title="Enable Lighting"       src="skins/dark/lighting_off.png" style="position:absolute; visibility:hidden;"/>
@@ -43,16 +45,20 @@
   <img id="measure"     title="Enable Measure Tool"    src="skins/dark/measure.png"/><br/>
 <!--MEASURE-->
 <!--POINT PICKING-->
+  <!--
   <img id="pick_on"     title="Disable PickPoint Mode" src="skins/dark/pick_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="pick"        title="Enable PickPoint Mode"  src="skins/dark/pick.png"/><br/>
-<!--POINT PICKING-->
+  -->
+  <!--POINT PICKING-->
 <!--SECTIONS-->
   <img id="sections_on" title="Disable Plane Sections" src="skins/dark/sections_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="sections"    title="Enable Plane Sections"  src="skins/dark/sections.png"/><br/>
 <!--SECTIONS-->
 <!--COLOR-->
-  <img id="color_on"    title="Disable Solid Color"    src="skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
+  <!--
+	<img id="color_on"    title="Disable Solid Color"    src="skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
   <img id="color"       title="Enable Solid Color"     src="skins/dark/color.png"/><br/>
+	-->
 <!--COLOR-->
 <!--CAMERA-->
   <img id="perspective"  title="Perspective Camera"    src="skins/dark/perspective.png" style="position:absolute; visibility:hidden;"/>
@@ -82,24 +88,38 @@
 <dialog id="help-modal" style="width:500px; max-width:100%;" closedby="any">
 	<h4 class="modal-title">3DHOP Viewer Help</h4>
 
-	<h5>Navigation</h5>
-	<p>Rotate the model by pressing your left mouse button and dragging.</p>
+	<h5>How to Navigate the Model</h5>
+	<p>Rotate the model by clicking and dragging the left mouse button.</p>
+	<p>Pan the model by clicking and dragging the right mouse button.</p>
 	<p>Zoom in and out using your mouse scroll wheel.</p>
+	<p>Click <img width="25" src="skins/dark/home.png"/> to return to the default view.</p>
+
+	<h5>How to Adjust the Lighting</h5>
+	<p>Click <img width="25" src="skins/dark/lighting.png"/> to disable or re-enable lighting.</p>
+	<p>Click <img width="25" src="skins/dark/lightcontrol.png"/> and then click and drag to change the postition of the light source.</p>
 
 	<h5>How to Measure</h5>
-	<p>Click <img  width="30" src="skins/dark/measure.png"/> to enable measuring. Click once on the first point you'd like to measure and then click on the second point where you would like to stop measuring. The measurement will be displayed to the right of the icon. Click <img   width="30"   src="skins/dark/measure_on.png" /> to turn it off.</p>
+	<p>Click <img width="25" src="skins/dark/measure.png"/> to enable measuring. Click once on the first point you'd like to measure and then click on the second point where you would like to stop measuring. The measurement will be displayed to the right of the icon.</p>
+	<p> Click <img width="25" src="skins/dark/measure_on.png" /> to turn it off.</p>
 
+	<!--
 	<h5>How to Pick a Point</h5>
-	<p>Click <img width="30" src="skins/dark/pick.png"/> to enable point picking. Click a point on the surface of the 3D model, and you will see the XYZ position of the point picked displayed to the right of the icon. Click  <img  width="30" src="skins/dark/pick_on.png" /> to turn it off.</p>
+	<p>Click <img width="25" src="skins/dark/pick.png"/> to enable point picking. Click a point on the surface of the 3D model, and you will see the XYZ position of the point picked displayed to the right of the icon. Click  <img width="25" src="skins/dark/pick_on.png" /> to turn it off.</p>
+	-->
 
 	<h5>How to Section the Model</h5>
-	<p>Click <img  width="30" src="skins/dark/sections.png"/> to open up the "sectioning" interface. Clicking on one of the three buttons on the left activates/deactivates the X, Y and Z sectioning plane, the three sliders moves the corresponding sectioning plane across the extent of the scene. The "flip" checkboxes invert the direction of the corresponding sectioning plane. The two checkboxes in the lower part of the interface toggles the visibility of the sectioning planes and of the highlighted border. Click <img width="30" src="skins/dark/sections_on.png" /> to turn it off.</p>
+	<p>Click <img width="25" src="skins/dark/sections.png"/> to open up the "sectioning" interface. Clicking on one of the three buttons on the left activates/deactivates the X, Y and Z sectioning plane, the three sliders moves the corresponding sectioning plane across the extent of the scene. The "flip" checkboxes invert the direction of the corresponding sectioning plane. The two checkboxes in the lower part of the interface toggles the visibility of the sectioning planes and of the highlighted border.</p>
+	<p>Click <img width="25" src="skins/dark/sections_on.png" /> to turn it off.</p>
 
 	<h5>How to Change Perspective</h5>
-	<p>Click <img  width="30"  src="skins/dark/orthographic.png"/> to switch to orthographic projection (typically used in technical drawings). Click  <img   width="30"  src="skins/dark/perspective.png" /> to switch to perspective projection (similar to human sight).</p>
+	<p>Click <img width="25" src="skins/dark/orthographic.png"/> to switch to orthographic projection (typically used in technical drawings).</p>
+	<p>Click <img width="25" src="skins/dark/perspective.png" /> to switch to perspective projection (similar to human sight).</p>
+
+	<h5>How to Take a Screenshot</h5>
+	<p>Click <img width="25" src="skins/dark/screenshot.png"/> to capture the current view of the model. The screenshot will have a transparent background.
 	
 	<h5>How to Toggle Fullscreen</h5>
-	<p>Click on the <img  width="30" src="skins/dark/full.png"/> icon to toggle fullscreen mode.</p>
+	<p>Click <img width="25" src="skins/dark/full.png"/> icon to toggle fullscreen mode.</p>
 
 	<button commandfor="help-modal" command="close">Close</button>
 </dialog>
